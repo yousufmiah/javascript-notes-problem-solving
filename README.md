@@ -44,7 +44,7 @@
 
 **#1: Print in Console from 1 to 10 numbers?**
 
-```
+```js
 
 for (let i = 1; i <= 10; i++) {
   console.log(i);
@@ -54,7 +54,7 @@ for (let i = 1; i <= 10; i++) {
 
 **#2: Print in Console the odd numbers less than 100?**
 
-```
+```js
 
 for (let i = 1; i <= 100; i += 2) {
   console.log(i);
@@ -64,7 +64,7 @@ for (let i = 1; i <= 100; i += 2) {
 
 **#3: Print in Console the multiplication table with 7?**
 
-```
+```js
 
 for (let i = 1; i <= 10; i++) {
   console.log(`7 x ${i} = ${i * 7}`);
@@ -74,7 +74,7 @@ for (let i = 1; i <= 10; i++) {
 
 **#4: Calculate the sum of numbers from 1 to 10?**
 
-```
+```js
 
 let sum = 0;
 for (let i = 1; i <= 10; i++) {
@@ -86,7 +86,7 @@ console.log(sum);
 
 **#5: Calculate 10!?**
 
-```
+```js
 
 let fabCalculate = 1;
 for (let i = 1; i <= 10; i++) {
@@ -98,7 +98,7 @@ console.log(fabCalculate);
 
 **#6: Calculate the sum of odd numbers greater than 10 and less than 30?**
 
-```
+```js
 
 let sumOdd = 0;
 for (let i = 10; i <= 30; i += 2) {
@@ -110,7 +110,7 @@ console.log(sumOdd);
 
 **#7: Calculate the sum of numbers in an array of numbers?**
 
-```
+```js
 
 let arr = [50, 67, 20, 84, 91, 40, 69];
 let arrTotal = 0;
@@ -123,7 +123,7 @@ console.log(arrTotal);
 
 **#8: Calculate the average of the numbers in an array of numbers?**
 
-```
+```js
 
 const arrAverage = (arr) => {
   let arrTotal = 0;
@@ -138,7 +138,7 @@ console.log(arrAverage(arr));
 
 **#9: Find the maximum number in an array of numbers?**
 
-```
+```js
 
 const findMaxNumber = (arr) => Math.max(...arr);
 
@@ -148,7 +148,7 @@ console.log(findMaxNumber(arr));
 
 **#10: Create a function that receives an array of numbers and returns an array containing only the positive numbers?**
 
-```
+```js
 
 const getPositiveNumber = (arr) => {
   const newArr = [];
@@ -165,7 +165,7 @@ console.log(getPositiveNumber(arr));
 
 **#11: Print in Console all the multiplication tables with numbers from 1 to 10?**
 
-```
+```js
 
 const printMultiplicationTable = (n) => {
   for (let i = 1; i <= n; i++) {
@@ -180,7 +180,7 @@ printMultiplicationTable(10);
 
 **#12: Create a function that will convert from Celsius to Fahrenheit?**
 
-```
+```js
 
 const celsiustoFahrenheit = (n) => n * 1.8 + 32;
 console.log(celsiustoFahrenheit(50));
@@ -189,7 +189,7 @@ console.log(celsiustoFahrenheit(50));
 
 **#13: Create a function that will convert from Fahrenheit to Celsius?**
 
-```
+```js
 
 const fahrenheittoCelsius = (n) => ((n - 32) * 5) / 9;
 console.log(fahrenheittoCelsius(50));
@@ -198,7 +198,7 @@ console.log(fahrenheittoCelsius(50));
 
 **#14: Create a function that will find the nth Fibonacci number using recursion?**
 
-```
+```js
 
 function findFibonacci(n) {
   if (n == 0) return 0;
@@ -213,7 +213,7 @@ console.log(findFibonacci(20));
 
 **#15: Create a function that will return a Boolean specifying if a number is prime?**
 
-```
+```js
 
 function isPrime(num) {
   for (var i = 2; i < num; i++)
@@ -228,7 +228,7 @@ console.log(isPrime(6));
 
 **#16: Check Leap Year Using if...else?**
 
-```
+```js
 
 function checkLeapYear(year) {
   if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
@@ -243,7 +243,7 @@ console.log(checkLeapYear(2025));
 
 **#17: Create a function that accepts an array and returns the last item in the array?**
 
-```
+```js
 
 const arr = [50, 90, 80, 66, 85];
 const returnLastItem = (arr) => arr[arr.length - 1];
@@ -253,7 +253,7 @@ console.log(returnLastItem(arr));
 
 **#18: Calculate the sum of digits of a positive integer number?**
 
-```
+```js
 
 const sumOfDigits = (n) => {
   const newArr = Array.from(String(n), Number);
@@ -269,7 +269,7 @@ console.log(sumOfDigits(45465));
 
 **#19: Print in Console the first 50 prime numbers**
 
-```
+```js
 
 getPrime(50);
 function getPrime(nPrime) {
@@ -294,7 +294,7 @@ function isPrime(num) {
 
 **#20: Check Odd or Even Number with Arguments Objects**
 
-```
+```js
 
 function checkOddOrEven() {
   for (let i = 0; i < arguments.length; i++) {
@@ -309,7 +309,7 @@ checkOddOrEven(11, 10, 20);
 
 **#21: Create a function that will return in an array the first "nPrimes" prime numbers greater than a particular number "startAt**
 
-```
+```js
 
 console.log(getFirstNprimeNumber(5, 500));
 function getFirstNprimeNumber(nPrimes, startAt) {
@@ -333,7 +333,7 @@ function isPrime(num) {
 
 **#22: Rotate an array to the left 1 position**
 
-```
+```js
 
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
@@ -348,7 +348,7 @@ console.log(arr);
 
 **#23: Reverse an array with createed function, don`t Change orginal array**
 
-```
+```js
 
 const arr = [1, 2, 3];
 
@@ -368,7 +368,7 @@ return newArr;
 
 **#24: Reverse an array with JavaScript Builtin Method**
 
-```
+```js
 
 const arr = [1, 2, 3];
 arr.reverse();
@@ -378,7 +378,7 @@ console.log(arr);
 
 **#25: Reverse a string with createed function, don`t Change orginal string**
 
-```
+```js
 
 const str = "Md Nazmul Islam";
 
@@ -397,7 +397,7 @@ function reverseString(str) {
 
 **#26: Reverse a string with JavaScript Builtin Method**
 
-```
+```js
 
 const str = "Md Nazmul islam";
 const newStr = str.split("").reverse().join("");
@@ -407,7 +407,7 @@ console.log(newStr);
 
 **#27: Create a function that takes an array and returns the types of values (data types) in a new array.**
 
-```
+```js
 
 const arrayValuesTypes = (arr) => {
   const newArr = [];
@@ -422,7 +422,7 @@ console.log(arrayValuesTypes([1, 2, "Nazmul", [], true]));
 
 **Or ShortCut**
 
-```
+```js
 
 const arrayValuesTypes = (arr) => arr.map((x) => typeof x);
 console.log(arrayValuesTypes([1, 2, "Nazmul", [], true]));
@@ -431,7 +431,7 @@ console.log(arrayValuesTypes([1, 2, "Nazmul", [], true]));
 
 **#28: Create a function that will return in an array. becarefull function parameter and array length is same in count.**
 
-```
+```js
 
 function getArray(number) {
   var newArray = [];
@@ -446,7 +446,7 @@ console.log(getArray(5));
 
 **Or ShortCut**
 
-```
+```js
 
 const getArray = (n) => Array(...Array(n)).map((v, i) => i + 1);
 console.log(getArray(5));
@@ -455,7 +455,7 @@ console.log(getArray(5));
 
 **#29: Create a function that takes the age in years and returns the age in days.**
 
-```
+```js
 
 const calcAge = (age) => (age < 0 || typeof age != "number" ? null : age * 365);
 console.log(calcAge(5));
@@ -464,7 +464,7 @@ console.log(calcAge(5));
 
 **#30: Create a function that takes voltage and current and returns the calculated power.**
 
-```
+```js
 
 const circuitPower = (voltage, current) => voltage * current;
 console.log(circuitPower(115, 5));
@@ -473,7 +473,7 @@ console.log(circuitPower(115, 5));
 
 **#31: Given two numbers, return true if the sum of both numbers is less than 50. Otherwise return false.**
 
-```
+```js
 
 function lessThan50(a, b) {
   if (a + b < 50) {
@@ -488,7 +488,7 @@ console.log(lessThan50(40, 30));
 
 **Or ShortCut**
 
-```
+```js
 
 const lessThan50 = (a, b) => a + b < 50;
 console.log(lessThan50(30.15));
@@ -497,7 +497,7 @@ console.log(lessThan50(30.15));
 
 **#32: Write a function that takes minutes and converts it to seconds.**
 
-```
+```js
 
 const minuteToSecond = (minutes) => minutes * 60;
 console.log(minuteToSecond(2));
@@ -506,7 +506,7 @@ console.log(minuteToSecond(2));
 
 **#33: Write a function that converts hours into seconds.**
 
-```
+```js
 
 const hoursToSeconds = (hours) => hours * 60 * 60;
 console.log(hoursToSeconds(2));
@@ -515,7 +515,7 @@ console.log(hoursToSeconds(2));
 
 **#34: Create a function that takes an array containing only numbers and return the first element.**
 
-```
+```js
 
 const getFirstValueOfArray = (arr) => arr[0];
 
@@ -523,7 +523,7 @@ const getFirstValueOfArray = (arr) => arr[0];
 
 **#35: Create a function that finds the maximum range of a triangle's third edge, where the side lengths are all integers.**
 
-```
+```js
 
 const nextEdge = (side1, side2) => side1 + side2 - 1;
 
@@ -531,7 +531,7 @@ const nextEdge = (side1, side2) => side1 + side2 - 1;
 
 **#36: Write a function that takes the base and height of a triangle and return its area.**
 
-```
+```js
 
 const triangleArea = (base, height) => (base * height) / 2;
 
@@ -539,7 +539,7 @@ const triangleArea = (base, height) => (base * height) / 2;
 
 **#37: Create a function that takes a number as an argument, increments the number by +1 and returns the result.**
 
-```
+```js
 
 const incrementsNumber = (n) => ++n;
 
@@ -547,7 +547,7 @@ const incrementsNumber = (n) => ++n;
 
 **#38: Create a function that takes a base number and an exponent number and returns the calculation.**
 
-```
+```js
 
 const calculateExponent = (num, exp) => Math.pow(num, exp);
 
@@ -555,7 +555,7 @@ const calculateExponent = (num, exp) => Math.pow(num, exp);
 
 **#39: Create a function that takes two numbers as arguments and return their sum.**
 
-```
+```js
 
 function addition(a, b) {
   if (typeof a !== "number" || typeof b !== "number") {
@@ -568,7 +568,7 @@ function addition(a, b) {
 
 **#40: Create a function that will merge two arrays and return the result as a new array**
 
-```
+```js
 
 const mergeArrays = (arr1, arr2) => {
   return [...arr1, ...arr2];
@@ -579,7 +579,7 @@ console.log(mergeArrays([5, 3, 6], [8, 7]));
 
 **// Or**
 
-```
+```js
 
 function mergeArrays(arr1, arr2) {
   var arr = [];
